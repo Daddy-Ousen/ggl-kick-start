@@ -4,9 +4,11 @@ def get_ruler(kingdom):
   # TODO: Add logic to determine the ruler of the kingdom
   alice = ['A', 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u']
   nobody = ['Y', 'y']
-  if kingdom.endswith(alice):
+  alice_tuple = tuple(alice)
+  nobody_tuple = tuple(nobody)
+  if kingdom.endswith(alice_tuple):
     ruler = 'Alice'
-  elif kingdom.endswith(nobody):
+  elif kingdom.endswith(nobody_tuple):
     ruler = 'nobody'
   else:
     ruler = 'Bob'
