@@ -2,6 +2,16 @@
 def get_ruler(kingdom):
   ruler = ''
   # TODO: Add logic to determine the ruler of the kingdom
+  alice = ['A', 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u']
+  nobody = ['Y', 'y']
+  if kingdom.endswith(alice):
+    ruler = 'Alice'
+  elif kingdom.endswith(nobody):
+    ruler = 'nobody'
+  else:
+    ruler = 'Bob'
+  
+
   # It should be either 'Alice', 'Bob' or 'nobody'.
   return ruler
 
