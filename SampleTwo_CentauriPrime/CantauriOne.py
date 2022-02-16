@@ -11,7 +11,6 @@ def get_ruler(kingdom):
   else:
     ruler = 'Bob'
   
-
   # It should be either 'Alice', 'Bob' or 'nobody'.
   return ruler
 
