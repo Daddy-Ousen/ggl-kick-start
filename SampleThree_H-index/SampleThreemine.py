@@ -1,6 +1,7 @@
 def h_index(n, citations):
   ans = []
   # TODO: Complete the function to get the H-Index scores after each paper
+  
 
   return ans
 
